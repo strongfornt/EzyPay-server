@@ -69,7 +69,6 @@ async function run() {
         if (!isMatch) {
           return res.send({ error: "Invalid pin" });
         }
-
         res.send(user);
       } catch (error) {
         res.status(500).send({ error: "Login failed" });
